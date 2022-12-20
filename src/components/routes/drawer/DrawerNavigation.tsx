@@ -2,6 +2,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Icon} from '../../elements';
 import HomeStack from '../stacks/HomeStack';
 import React from 'react';
+import RSVPStack from '../stacks/RSVPStack';
 
 type DrawerNavigationProps = {};
 type DrawerIconProps = {
@@ -46,7 +47,7 @@ const DrawerNavigation: React.FC<DrawerNavigationProps> = () => {
         };
       }}>
       <Drawer.Screen name={'Home'} component={HomeStack} />
-      <Drawer.Screen name={'RSVP'} component={HomeStack} />
+      <Drawer.Screen name={'RSVP'} component={RSVPStack} />
     </Drawer.Navigator>
   );
 };

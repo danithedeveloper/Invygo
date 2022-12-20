@@ -1,10 +1,10 @@
-export type Participant = {
+export type Profession = {
   id: string;
   name: string;
   icon: string;
 };
 
-export const participants: Participant[] = [
+export const professions: Profession[] = [
   {
     id: '1',
     name: 'Employed',

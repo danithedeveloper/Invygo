@@ -43,7 +43,7 @@ const RootNavigation = () => {
         <RootStack.Navigator screenOptions={screenOptions}>
           {showSplashScreen ? (
             <RootStack.Screen
-              name="Main"
+              name="Splash"
               options={{headerShown: false}}
               component={SplashScreen}
             />
@@ -55,7 +55,7 @@ const RootNavigation = () => {
                 title: '',
                 headerBackTitleVisible: false,
               }}
-              name="Home"
+              name="Main"
               component={DrawerNavigation}
             />
           )}

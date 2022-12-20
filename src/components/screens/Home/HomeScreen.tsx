@@ -16,7 +16,7 @@ import {Participant} from '../../../data/Participant';
 import {color} from '../../../constants';
 import {Alert, SafeAreaView, View} from 'react-native';
 import {RadioOption} from '../../elements/RadioButton/RadioButton';
-import {participants} from '../../../data/Profession';
+import {professions} from '../../../data/Profession';
 import {useAppDispatch, useAppSelector} from '../../../hooks';
 import {registerParticipant} from '../../../actions/Register';
 
@@ -65,7 +65,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
     console.log('submit data', data);
   };
 
-  const data: RadioOption[] = participants.map(item => {
+  const data: RadioOption[] = professions.map(item => {
     const {id, name, icon} = item;
     return {
       label: name,
@@ -154,6 +154,7 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
           <DateTimePicker
             value={value ? value : new Date()}
             mode="date"
+            focusable={false}
             //onChange={onChangeDate}
             onChange={(event, date) => {
               onChange(date);

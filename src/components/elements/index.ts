@@ -6,6 +6,7 @@ import RadioButton from './RadioButton';
 import ActivityLoader from './ActivityLoader';
 import Icon from './Icon';
 import DateTimePicker from './DateTimePicker';
+import Divider from './Divider';
 
 export {
   Button,
@@ -16,4 +17,6 @@ export {
   ActivityLoader,
   Icon,
   DateTimePicker,
+  Divider,
+
 };
